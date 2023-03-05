@@ -14,9 +14,9 @@ function Layout({ children }) {
       </Head>
 
         <Navbar />
-
-      <main>{children}</main>
-      <footer>
+      <div className="h-[109px]"></div>
+      {children}
+      <footer className="">
         <Footer />
       </footer>
     </>

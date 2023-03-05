@@ -18,7 +18,7 @@ function Navbar() {
 
   return (
     
-    <nav className='bg-gray-900 px-2 sm:px-4 py-2.5 w-full border-b border-gray-600 sticky'>
+    <nav className='bg-gray-900 px-2 sm:px-4 py-2.5 w-full border-b border-gray-600 fixed z-50'>
     { /* ----- Mobile Menu ----- */}
       <div className='container flex flex-wrap items-center justify-between mx-auto md:hidden visible'>
         <div className="container h-16 w-16 m-3 ">
