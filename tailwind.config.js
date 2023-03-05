@@ -11,6 +11,9 @@ module.exports = {
         'righteous': ['Righteous', 'cursive'],
         'permanent-marker': ["Permanent Marker", 'cursive'], 
         'karla': ['Karla', 'sans-serif'],
+      }, 
+      colors: {
+        'burnt-pink': '#ba2c73'
       }
     },
   },

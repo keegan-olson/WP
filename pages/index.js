@@ -1,29 +1,26 @@
 
 import { client, urlFor } from '../lib/sanity'
+import Image from 'next/image';
 
 
 
-export default function Home({ firstImage }) {
+export default function Home({ bannerData }) {
   return (
     <>
-    <h1 className=''>Home</h1>
+    <ul>
+    </ul>
+    
     </>
   )
 };
 
-// export async function getStaticProps() {
-//   const query = `*[_type == "product"]`;
-//   const products = await client.fetch(query);
-
-//   const bannerQuery = `*[_type == "banner"]`;
-//   const bannerData = await client.fetch(bannerQuery);
-//   const firstImage = await bannerData[0]
-//   console.log(firstImage);
-//   console.log(urlFor(firstImage.image).url());
-//   return {
-//     props: {
-//       products, 
-//       firstImage
-//     }
-//   };
-// }
+export async function getStaticProps() {
+  const bannerQuery = `*[fieldAssignment == "banner1"] | order(_createdAt desc)[0]`;
+  const bannerData = await client.fetch(bannerQuery);
+  console.log(bannerData[0])
+  return {
+    props: {
+      bannerData
+    }
+  };
+}

@@ -55,7 +55,7 @@ function Navbar() {
         <h1 className="text-white font-permanent-marker text-3xl tracking-wide">Wicked Prints</h1>
         </div>
         <ul className="text-white text-center m-1 font-karla text-lg tracking-wider font-medium text-transform: uppercase flex flex-row gap-3">
-            {navigation.map((link) => (<a href={link.href} className="m-1" key={link.name}>{link.name}</a>))}
+            {navigation.map((link) => (<a href={link.href} className="m-1 p-2 hover:text-burnt-pink last:bg-burnt-pink last:rounded-lg last:px-4 last:hover:bg-white last:hover:text-burnt-pink" key={link.name}>{link.name}</a>))}
         </ul>
     </div>
 
