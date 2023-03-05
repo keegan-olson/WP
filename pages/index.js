@@ -1,7 +1,5 @@
 import { client, urlFor } from "../lib/sanity";
 import { groq } from "next-sanity";
-import Image from "next/image";
-import { image } from "@cloudinary/url-gen/qualifiers/source";
 
 export default function Home({ hero1Url, hero2Url, hero3Url }) {
   return (
