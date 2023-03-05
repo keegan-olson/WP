@@ -2,6 +2,17 @@ import React, { useState } from "react";
 import Image from "next/image";
 import logoWhite from "../public/WP-Logo-White.png";
 
+const navigation = [
+    { name: 'Home', href: '#', current: true },
+    { name: 'Portfolio', href: '#', current: false },
+    { name: 'Connect', href: '#', current: false },
+    { name: 'Shop', href: '#', current: false },
+  ]
+
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+  }
+
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -15,20 +26,21 @@ function Navbar() {
             className='object-contain'
         />
         </div>
-        <h1 className="text-white font-permanent-marker text-3xl">Wicked Prints</h1>
+        <h1 className="text-white font-permanent-marker text-2xl tracking-wide">Wicked Prints</h1>
         <i
-          class={menuOpen ? 'fa-regular fa-xmark text-white fa-3x m-3' : 'fa-regular fa-square-ellipsis text-white fa-3x m-3'}
+          className={menuOpen ? 'fa-regular fa-xmark text-white fa-2xl m-3' : 'fa-regular fa-square-ellipsis text-white fa-2xl m-3'}
           onClick={() => {
             setMenuOpen(menuOpen ? false : true);
             console.log(menuOpen);
           }}
         ></i>
       </div>
-      <div className={menuOpen ? 'visible flex flex-row bg-black w-full': 'hidden'}>
-        <ul className="text-white">
-          <li>Home</li>
-          <li>Contact</li>
-          <li>Shop</li>
+      <div className={menuOpen ? 'visible flex flex-row bg-gray-900 w-full justify-center': 'hidden'}>
+        <ul className="text-white text-center m-1 font-karla text-lg tracking-wider font-medium text-transform: uppercase">
+          <li className="m-1">Home</li>
+          <li className="m-1">Portfolio</li>
+          <li className="m-1">Contact</li>
+          <li className="m-1">Shop</li>
         </ul>
       </div>
     </nav>
