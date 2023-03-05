@@ -1,6 +1,5 @@
 
 import { client, urlFor } from '../lib/sanity'
-import Head from 'next/head'
 
 
 
