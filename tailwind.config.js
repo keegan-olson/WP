@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'righteous': ['Righteous', 'cursive'],
-        'permanent-marker': ["Permanent Marker", 'cursive']
+        'permanent-marker': ["Permanent Marker", 'cursive'], 
+        'karla': ['Karla', 'sans-serif'],
       }
     },
   },
