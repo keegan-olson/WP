@@ -7,8 +7,8 @@ export default defineConfig({
   name: 'default',
   title: 'wicked-prints-cms',
 
-  projectId: 'pm9q8702',
-  dataset: 'production',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATABASE,
 
   plugins: [deskTool(), visionTool()],
 
