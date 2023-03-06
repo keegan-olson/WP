@@ -8,7 +8,7 @@ import {schemaTypes} from './wicked-prints-cms/schemas/index'
 export default defineConfig({
     basePath: '/studio',
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
-	dataset: process.env.NEXT_PUBLIC_SANITY_DATABASE,
+	dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
   plugins: [deskTool()],
   schema: {
 	  types: schemaTypes,
