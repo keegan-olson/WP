@@ -18,7 +18,7 @@ function Navbar() {
 
   return (
     
-    <nav className='bg-gray-900 px-2 sm:px-4 py-2.5 w-full border-b border-gray-600 fixed z-50'>
+    <nav className='bg-black px-2 sm:px-4 py-2.5 w-full fixed z-50'>
     { /* ----- Mobile Menu ----- */}
       <div className='container flex flex-wrap items-center justify-between mx-auto md:hidden visible'>
         <div className="container h-16 w-16 m-3 ">
@@ -36,8 +36,8 @@ function Navbar() {
             console.log(menuOpen);
           }}
         ></i>
-              <div className={menuOpen ? 'visible bg-gray-900 w-full': 'hidden'}>
-        <ul className="text-white text-center m-1 font-karla text-lg tracking-wider font-medium text-transform: uppercase flex flex-col justify-center">
+              <div className={menuOpen ? 'visible bg-black w-full': 'hidden'}>
+        <ul className="text-white text-center m-1 mb-3 font-karla text-lg tracking-wider font-medium text-transform: uppercase flex flex-col justify-center">
             {navigation.map((link) => (<a href={link.href} className="m-1" key={link.name}>{link.name}</a>))}
         </ul>
       </div>
