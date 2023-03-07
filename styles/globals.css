@@ -4,10 +4,12 @@
 
 @layer components {
     #__next {
-        @apply h-full;
+        @apply min-h-screen;
+        @apply flex flex-col;
     }
     html,
     body {
-        @apply h-full bg-black;
+        @apply min-h-screen bg-black;
+        
     }
 }
