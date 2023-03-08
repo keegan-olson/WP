@@ -12,7 +12,7 @@ function Layout({ children }) {
     <>
         <Navbar />
         <div className="h-[109px]"></div>
-      <div className="flex-1 flex-col relative">
+      <div className="flex flex-col flex-1">
       {children}
       </div>
       <footer className="">
