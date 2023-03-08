@@ -1,4 +1,3 @@
-import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/20/solid'
 import { client, urlFor } from "../lib/sanity";
 
 
@@ -32,7 +31,7 @@ export default function Gallery({ artworks, }) {
                   href=''
                   className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm font-semibold text-gray-900"
                 >
-                  <EnvelopeIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                  <i class="fa-light fa-envelope"></i>
                   Email
                 </a>
               </div>
