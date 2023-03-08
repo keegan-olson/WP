@@ -4,7 +4,7 @@ import { groq } from "next-sanity";
 export default function Home({ hero1Url, hero2Url, hero3Url }) {
   return (
     <div className='grid md:grid-cols-3 grid-cols-1 md:h-[80vh]  gap-3 mx-2 py-2 bg-black'>
-      <div
+      <a href='/portfolio'><div
         style={{
           backgroundImage: `url(${`${hero1Url}?blur=50`})`,
           backgroundSize: "cover",
@@ -14,8 +14,8 @@ export default function Home({ hero1Url, hero2Url, hero3Url }) {
         <div className="h-full w-full bg-black backdrop-blur-sm bg-opacity-50 hover:backdrop-blur-none text-white font-karla flex flex-col text-3xl items-center justify-center">
           <p className="w-full text-center m-3 text-[3rem] font-permanent-marker p-12 leading-normal">Explore Our Designs</p>
         </div>
-      </div>
-      <div
+      </div></a>
+      <a href='/connect'><div
         style={{
           backgroundImage: `url(${`${hero2Url}?blur=50`})`,
           backgroundSize: "cover",
@@ -26,8 +26,8 @@ export default function Home({ hero1Url, hero2Url, hero3Url }) {
         <div className="h-full w-full bg-black backdrop-blur-sm bg-opacity-50 hover:backdrop-blur-none text-white font-karla flex flex-col text-3xl items-center justify-center">
           <p className="w-full text-center m-3 text-[3rem] font-permanent-marker p-12 leading-normal">Custom Screen Printing</p>
         </div>
-      </div>
-      <div
+      </div></a>
+      <a href='/store'><div
         style={{
           backgroundImage: `url(${`${hero3Url}?blur=50`})`,
           backgroundSize: "cover",
@@ -38,7 +38,7 @@ export default function Home({ hero1Url, hero2Url, hero3Url }) {
           <p className="w-full text-center m-3 text-[3rem] font-permanent-marker p-12 leading-normal">Check Out Our Merch</p>
           {/* <button className="hidden md:block w-3/6 bg-burnt-pink text-white py-2 px-6 rounded-lg m-3  tracking-wider border-2 border-white hover:rotate-12 uppercase italic font-permanent-marker">Test</button> */}
         </div>
-      </div>
+      </div></a>
     </div>
   );
 }
