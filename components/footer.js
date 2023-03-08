@@ -3,7 +3,8 @@ import React from 'react'
 const navigation = [
   {
     name: 'Instagram',
-    href: '#',
+    href: 'https://www.instagram.com/totallywickedprints/',
+    target: '_blank',
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -32,7 +33,7 @@ function Footer() {
       <div className="mx-auto max-w-7xl py-12 px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-white hover:text-gray-500">
+            <a key={item.name} href={item.href} className="text-white hover:text-gray-500" target={item.target}>
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </a>
