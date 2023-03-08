@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import logoWhite from "../public/WP-Logo-White.png";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
@@ -27,11 +28,11 @@ function Navbar() {
     { /* ----- Mobile Menu ----- */}
       <div className='container flex flex-wrap items-center justify-between mx-auto md:hidden visible'>
         <div className='container h-16 w-16 m-3 '>
-        <a href='/'><Image
+        <Link href='/'><Image
             src={logoWhite}
             alt='Wicked Prints Logo'
             className='object-contain'
-          /></a>
+          /></Link>
         </div>
         <h1 className='text-white font-permanent-marker text-2xl tracking-wide'>
           Wicked Prints
@@ -57,11 +58,11 @@ function Navbar() {
       <div className='container mx-auto md:flex hidden justify-between items-center'>
         <div className='container flex flex-row items-center gap-16'>
           <div className='container h-16 w-16 m-3 '>
-            <a href='/'><Image
+            <Link href='/'><Image
               src={logoWhite}
               alt='Wicked Prints Logo'
               className='object-contain'
-            /></a>
+            /></Link>
           </div>
           <h1 className='text-white font-permanent-marker text-3xl tracking-wide'>
             Wicked Prints
