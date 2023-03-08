@@ -7,7 +7,7 @@ export default function Home({ hero1Url, hero2Url, hero3Url }) {
     <div className='grid md:grid-cols-3 grid-cols-1 md:h-[80vh]  gap-3 mx-2 py-2 bg-black'>
       <Link href='/portfolio'><div
         style={{
-          backgroundImage: `url(${`${hero1Url}?blur=50`})`,
+          backgroundImage: `url(${`${hero1Url}?blur=50&fm=webp&q=55`})`,
           backgroundSize: "cover",
         }}
         className='flex items-center justify-center h-96 md:h-full'
@@ -18,7 +18,7 @@ export default function Home({ hero1Url, hero2Url, hero3Url }) {
       </div></Link>
       <Link href='/connect'><div
         style={{
-          backgroundImage: `url(${`${hero2Url}?blur=50`})`,
+          backgroundImage: `url(${`${hero2Url}?blur=50&fm=webp&q=55`})`,
           backgroundSize: "cover",
           
         }}
@@ -30,7 +30,7 @@ export default function Home({ hero1Url, hero2Url, hero3Url }) {
       </div></Link>
       <Link href='/store'><div
         style={{
-          backgroundImage: `url(${`${hero3Url}?blur=50`})`,
+          backgroundImage: `url(${`${hero3Url}?blur=50&fm=webp&q=55`})`,
           backgroundSize: "cover",
         }}
         className='flex items-center justify-center h-96 md:h-full'
