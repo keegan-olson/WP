@@ -27,11 +27,11 @@ function Navbar() {
     { /* ----- Mobile Menu ----- */}
       <div className='container flex flex-wrap items-center justify-between mx-auto md:hidden visible'>
         <div className='container h-16 w-16 m-3 '>
-          <Image
+        <a href='/'><Image
             src={logoWhite}
             alt='Wicked Prints Logo'
             className='object-contain'
-          />
+          /></a>
         </div>
         <h1 className='text-white font-permanent-marker text-2xl tracking-wide'>
           Wicked Prints
@@ -57,11 +57,11 @@ function Navbar() {
       <div className='container mx-auto md:flex hidden justify-between items-center'>
         <div className='container flex flex-row items-center gap-16'>
           <div className='container h-16 w-16 m-3 '>
-            <Image
+            <a href='/'><Image
               src={logoWhite}
               alt='Wicked Prints Logo'
               className='object-contain'
-            />
+            /></a>
           </div>
           <h1 className='text-white font-permanent-marker text-3xl tracking-wide'>
             Wicked Prints
