@@ -41,7 +41,7 @@ const formFields = [
 function Form() {
   return (
     <div className='flex flex-col items-center bg-gray-600 p-10 justify-evenly'>
-      <form className='flex flex-col text-white font-karla'>
+      <form className='flex flex-col text-white font-karla md:w-1/3 w-2/3'>
         {formFields.map((field) => (
           <>
             <label for={field.id} className='py-4 inline-block '>
