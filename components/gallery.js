@@ -11,7 +11,7 @@ export default function Gallery({ artworks, }) {
         >
           <div className="flex flex-1 flex-col p-6">
           <i class="fa-regular fa-heart self-end fa-xl"></i>
-            <img className="mt-3 mx-auto h-max w-max flex-shrink-0 rounded" src={urlFor(art.image).url()} alt={art.altText} />
+            <img className="mt-3 mx-auto max-h-[200px] flex-shrink-0 rounded" src={urlFor(art.image).url()} alt={art.altText} />
             <h3 className="mt-6 text-sm font-medium text-gray-900">{art.title}</h3>
             <dl className="mt-1 flex flex-grow flex-col justify-between">
               <dt className="sr-only">Title</dt>
